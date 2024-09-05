@@ -6,7 +6,7 @@ int main() {
     
     if(a >= 1.0){
         printf("High");
-    } else if(0.5 <= a < 1.0){
+    } else if(a >= 0.5){
         printf("Middle");
     } else {
         printf("Low");
