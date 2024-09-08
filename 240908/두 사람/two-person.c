@@ -9,6 +9,8 @@ int main() {
     if(a_age >= 19 || b_age >= 19)
         if(a_sex == 'M' || b_sex == 'M')
             printf("1");
+        else if (a_sex =='W' || b_sex == 'W')
+            printf("0");
         else
             printf("0");
     else
