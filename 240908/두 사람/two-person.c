@@ -6,16 +6,9 @@ int main() {
     scanf("%d %c\n", &a_age, &a_sex);
     scanf("%d %c", &b_age, &b_sex);
 
-    if(a_age >= 19 || b_age >= 19)
-        if(a_sex == 'M' || b_sex == 'M')
-            printf("1");
-        else
-            printf("0");
-    else{
-        if(a_sex == 'M' || b_sex == 'M')
-            printf("1");
-        else
-            printf("0");
-    }
+    if((a_age >= 19 && a_sex == 'M')||(b_age >= 19 && b_sex == 'M'))
+        printf("1");
+    else
+        printf("0");
     return 0;
 }
