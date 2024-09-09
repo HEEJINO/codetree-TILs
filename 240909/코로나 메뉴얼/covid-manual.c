@@ -9,29 +9,43 @@ int main() {
     scanf("%c %d\n", &yS, &yT);
     scanf("%c %d", &zS, &zT);
 
-    if(xT >= 37 || yT >= 37 || zT >= 37){
-        if(xS == 'Y' || yS == 'Y' || zS == 'Y'){
+    if(xT >= 37){
+        if(xS =='Y')
             emer_x = 'A';
-            emer_y = 'A';
-            emer_z = 'A';
-        }
-        else{
-             emer_x = 'B';
-             emer_y = 'B';
-             emer_z = 'B';
-        }
+        if(xS == 'N')
+            emer_x = 'B';
     }
     else{
-        if(xS == 'Y' || yS == 'Y' || zS == 'Y'){
-             emer_x = 'C';
-             emer_y = 'C';
-             emer_z = 'C';
-        }
-        else{
-             emer_x = 'D';
-             emer_y = 'D';
-             emer_z = 'D';
-        }
+        if(xS == 'Y')
+            emer_x = 'C';
+        if(xS == 'N')
+            emer_x = 'D';
+    }
+
+    if(yT >= 37){
+        if(yS =='Y')
+            emer_y = 'A';
+        if(yS == 'N')
+            emer_y = 'B';
+    }
+    else{
+        if(yS == 'Y')
+            emer_y = 'C';
+        if(yS == 'N')
+            emer_y = 'D';
+    }
+
+    if(zT >= 37){
+        if(zS =='Y')
+            emer_z = 'A';
+        if(zS == 'N')
+            emer_z = 'B';
+    }
+    else{
+        if(zS == 'Y')
+            emer_z = 'C';
+        if(zS == 'N')
+            emer_z = 'D';
     }
 
     if(emer_x == 'A'){
