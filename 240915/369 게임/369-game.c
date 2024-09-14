@@ -9,6 +9,8 @@ int main() {
             printf("0 ");
         else if((i%10==3)||(i%10==6)||(i%10==9))
             printf("0 ");
+        else if((i/10==3)||(i/10==6)||(i/10==9)||(i/100==3))
+            printf("0 ");
         else   
             printf("%d ", i);
     }
