@@ -2,8 +2,8 @@
 
 int main() {
     int n, sum_val=0;
+    scanf("%d", &n);
     for(int i=1; i<=n; i++){
-        scanf("%d", &n);
         if(i % 2 ==1 && i % 3 == 0)
             sum_val += i;
     }
