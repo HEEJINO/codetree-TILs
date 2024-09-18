@@ -8,7 +8,7 @@ int main() {
         if(i % 5 == 0)
             sum += i;
     }
-    for(int i=a; i>=a; i--){
+    for(int i=b; i>=a; i--){
         if(i % 5 == 0)
             sum += i;
     }
