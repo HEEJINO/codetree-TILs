@@ -11,7 +11,7 @@ int main() {
         printf("%d", sum);
     }
     else{
-        for(int i=b; i>=a; i--){
+        for(int i=a; i>=b; i--){
             if(i % 5 == 0)
                 sum += i;
         }
