@@ -6,14 +6,12 @@ int main() {
     
     while(1){
         scanf("%d %d %c\n", &a, &b, &ch);
-        if(ch != 'C'){
+        if(ch == 'C'){
             printf("%d\n", a*b);
-        }
+            break;}
         else{
             printf("%d\n", a*b);
-            break;
         }
-        break;
     }
 
     return 0;
